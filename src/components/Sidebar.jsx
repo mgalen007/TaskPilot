@@ -27,11 +27,12 @@ function Sidebar() {
                             <div 
                                 onClick={() => setActive(section.name)}
                                 className={ active === section.name ? (
-                                "border-t-1 border-gray-300 h-[6.5vh] flex items-center gap-3 pl-4 cursor-pointer bg-[#fcf8eb] border-l-5 border-l-[#fae150] font-bold"
-                                ) : (
-                                "border-t-1 border-gray-300 h-[6.5vh] flex items-center gap-3 pl-4 cursor-pointer"
+                                    "border-t-1 border-gray-300 h-[6.5vh] flex items-center gap-3 pl-4 cursor-pointer bg-[#fcf8eb] border-l-5 border-l-[#fae150] font-bold"
+                                    ) : (
+                                    "border-t-1 border-gray-300 h-[6.5vh] flex items-center gap-3 pl-4 cursor-pointer"
                                 )
-                            } key={section.name}>
+                                } 
+                                key={section.name}>
                                 {section.icon}
                                 <h3>{section.name}</h3>
                             </div>
