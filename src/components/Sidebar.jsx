@@ -1,3 +1,4 @@
+import { useState } from "react"
 import Icon from "./Icon"
 import { IoMdCheckmarkCircleOutline } from "react-icons/io"
 import { MdOutlineSpaceDashboard } from "react-icons/md"
@@ -6,6 +7,8 @@ import { IoSettingsOutline } from "react-icons/io5"
 import { MdOutlineLogout } from "react-icons/md"
 
 function Sidebar() {
+    const [active, setActive] = useState("Dashboard")
+
     const sections = [
         { name: "Dashboard", icon: <MdOutlineSpaceDashboard /> },
         { name: "My Tasks", icon: <IoMdCheckmarkCircleOutline /> },
@@ -19,7 +22,14 @@ function Sidebar() {
                 </div>
                 {sections.map(section => {
                     return (
-                        <div className="border-t-1 border-gray-300 h-[6.5vh] flex items-center gap-3 pl-4" key={section.name}>
+                        <div 
+                            onClick={() => setActive(section.name)}
+                            className={ active === section.name ? (
+                            "border-t-1 border-gray-300 h-[6.5vh] flex items-center gap-3 pl-4 cursor-pointer bg-[#fcf8eb] border-l-5 border-l-[#fae150] font-bold"
+                            ) : (
+                            "border-t-1 border-gray-300 h-[6.5vh] flex items-center gap-3 pl-4 cursor-pointer"
+                            )
+                        } key={section.name}>
                             {section.icon}
                             <h3>{section.name}</h3>
                         </div>
