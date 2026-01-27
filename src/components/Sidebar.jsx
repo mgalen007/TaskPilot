@@ -7,8 +7,8 @@ import { IoSettingsOutline } from "react-icons/io5"
 import { MdOutlineLogout } from "react-icons/md"
 import { Link } from "react-router-dom"
 
-function Sidebar() {
-    const [active, setActive] = useState("Dashboard")
+function Sidebar({ currentPage }) {
+    const [active, setActive] = useState(currentPage)
 
     const sections = [
         { name: "Dashboard", icon: <MdOutlineSpaceDashboard />, path: "/dashboard" },
