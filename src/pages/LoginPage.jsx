@@ -3,7 +3,7 @@ import Icon from '../components/Icon'
 function LoginPage() {
     return (
         <>
-            <div className="border-[.5px] border-gray w-fit mx-auto mt-[20vh] pt-5 pb-12 px-9 rounded-2xl">
+            <div className="border-[.5px] border-gray w-fit mx-auto mt-[20vh] pt-5 pb-12 px-9 rounded-2xl bg-white">
                 <Icon width={300} height={100} />
                 <form className="mt-2">
                     <div>
