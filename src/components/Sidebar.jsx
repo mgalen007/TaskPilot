@@ -18,7 +18,7 @@ function Sidebar({ currentPage }) {
     return (
         <aside className="rounded-2xl w-fit mt-5 ml-3 h-[94vh] bg-white flex flex-col justify-between">
             <div>
-                <div className="mx-auto w-[90%] px-4">
+                <div className="mx-auto w-[90%] px-5">
                     <Icon height={75} width={180}/>
                 </div>
                 {sections.map(section => {
