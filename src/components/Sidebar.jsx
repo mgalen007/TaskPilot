@@ -16,7 +16,7 @@ function Sidebar({ currentPage }) {
         { name:"Notifications", icon: <LuBellRing />, path: "/notifications" }
     ]
     return (
-        <aside className="rounded-2xl w-fit mt-5 ml-3 h-[94vh] bg-white flex flex-col justify-between">
+        <aside className="rounded-2xl w-fit mt-5 ml-3 h-[100vh] bg-white flex flex-col justify-between">
             <div>
                 <div className="mx-auto w-[90%] px-5">
                     <Icon height={75} width={180}/>
@@ -47,7 +47,7 @@ function Sidebar({ currentPage }) {
                 </div>
                 <div className="flex items-center gap-4 pl-4 h-[6.5vh]">
                     <MdOutlineLogout />
-                    <h3>Log out</h3>
+                    <h3 className="text-red-500">Log out</h3>
                 </div>
             </div>
         </aside>
