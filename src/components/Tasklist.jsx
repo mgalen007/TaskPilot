@@ -23,7 +23,7 @@ function Task({ task }) {
                 <input 
                     type="checkbox" 
                     onClick={handleCheckClick} 
-                    className="w-5 h-5 appearance-none border-1 border-gray-500 rounded-[50%] checked:bg-[#fae150] checked:border-black"
+                    className="w-5 h-5 appearance-none border-1 border-gray-500 rounded-[50%] cursor-pointer checked:bg-[#fae150] checked:border-black"
                 ></input>
                 <p className={ done ? "translate-y-[-1px] line-through text-gray-500" :  "translate-y-[-1px]"}>{task.name}</p>
             </div>
